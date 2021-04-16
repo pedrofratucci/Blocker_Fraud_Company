@@ -68,7 +68,6 @@ All numerical variables have a large number of outliers yet, except the 'step' f
 ### HYPOTESE 1: There are more fraudulent transactions in quantity through Cash-Out type
 
 ![H1_TF](https://user-images.githubusercontent.com/81817799/115089004-c6826380-9ee7-11eb-8053-48e28c3d3d33.png)
-
 There are just Transfer and Cash-Out type in fraudulent transactions.
 The Transfer type is the most common type between both, surpassing with a slightly difference of 3.
 
@@ -76,14 +75,12 @@ The Transfer type is the most common type between both, surpassing with a slight
 ### HYPOTESE 2: There are more fraudulent transactions in total values through Transfer type
 
 ![H2_TF](https://user-images.githubusercontent.com/81817799/115089006-c84c2700-9ee7-11eb-96e7-6d08f0d90b26.png)
-
 Transfer type also have more fraudulent transactions executed in total values then Cash-Out type.
 
 
 ### HYPOTESE 3: All transactions over $ 200,000.00 are fraudulents
 
 ![H3_TF](https://user-images.githubusercontent.com/81817799/115089010-c97d5400-9ee7-11eb-906c-bf6d9296a0b7.png)
-
 Not all transactions over \$ 200,000.00 are fraudulent.
 Only a small percentage of the transactions with \$ 200,000.00 amount or higher are fraudulent.
 
@@ -91,7 +88,6 @@ Only a small percentage of the transactions with \$ 200,000.00 amount or higher 
 ### HYPOTESE 4: Transactions with amount values level between $ 50,000.00 and 200,000.00 are more likely to be fraudulent than the others amount levels
 
 ![H4_TF](https://user-images.githubusercontent.com/81817799/115089012-ca15ea80-9ee7-11eb-9e46-f9e292b90c64.png)
-
 Transaction level between $ 50,000.00 and \\$ 200,000.00 have more fraudulent transactions than between \\$ 0.00 and \\$ 50,000.00 level.
 Transaction level with amounts higher than \$ 200,000.00 have more fraudulent transactions of all of them.
 
@@ -99,35 +95,30 @@ Transaction level with amounts higher than \$ 200,000.00 have more fraudulent tr
 ### HYPOTESE 5: Fraudulent transations happens more to Customer-Customer than Customer-Merchant relation
 
 ![H5_TF](https://user-images.githubusercontent.com/81817799/115089013-cb471780-9ee7-11eb-9b2b-9be4efdb9816.png)
-
 There are only fraudulent transactions between Customer-Customer relation.
 
 
 ### HYPOTESE 6: There is more chance of having a fraudulent transaction when the final origin's balance is zero
 
 ![H6_TF](https://user-images.githubusercontent.com/81817799/115089017-cda97180-9ee7-11eb-8e17-bc9819964bd8.png)
-
 Only a few percent of the fraudulent transactions leave the origin account's final balance with values different than zero.
 
 
 ### HYPOTESE 7: Fraudulent transactions tends to happen more on the weekends than workweek
 
 ![H7_TF](https://user-images.githubusercontent.com/81817799/115089018-cf733500-9ee7-11eb-868a-240f5afccdcd.png)
-
 Fraudulent transactions are more likely to happen during the workweek than weekends.
 
 
 ### HYPOTESE 8: Fraudulent transactions tends to happen more on the First month's Fortnight than the Second month's Fortnight
 
 ![H8_TF](https://user-images.githubusercontent.com/81817799/115089020-d00bcb80-9ee7-11eb-8bfa-c91187990635.png)
-
 Despite the fact that transactions are more likely to happen at the first month's fortnight, the fraudulent transactions are more likely to happen, with a slightly difference, at the second month's fortnight.
 
 
 ## Multivariate Analysis
 
 ![features_relations](https://user-images.githubusercontent.com/81817799/115087781-3ba06980-9ee5-11eb-8e91-e36fcf065adf.png)
-
 There are some variables that have a strong correlation between them.
 This correlation isn't good for the model, because it increases the dimensionality without a considerable variance. So in this case, we should remove one of them, and that's what we gonna do.
 
