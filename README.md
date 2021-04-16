@@ -118,9 +118,9 @@ Despite the fact that transactions are more likely to happen at the first month'
 
 ## Multivariate Analysis
 
-![features_relations](https://user-images.githubusercontent.com/81817799/115087781-3ba06980-9ee5-11eb-8e91-e36fcf065adf.png)
+![features_relations](https://user-images.githubusercontent.com/81817799/115089471-aa32f680-9ee8-11eb-8c33-8e1723953a1b.png)
 There are some variables that have a strong correlation between them.
-This correlation isn't good for the model, because it increases the dimensionality without a considerable variance. So in this case, we should remove one of them, and that's what we gonna do.
+This correlation isn't good for the model, because it increases the dimensionality without a considerable variance. So in this case, we should remove one of them.
 
 
 # Business Solution Performance
