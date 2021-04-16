@@ -119,8 +119,14 @@ Despite the fact that transactions are more likely to happen at the first month'
 ## Multivariate Analysis
 
 ![features_relations](https://user-images.githubusercontent.com/81817799/115089471-aa32f680-9ee8-11eb-8c33-8e1723953a1b.png)
-There are some variables that have a strong correlation between them.
-This correlation isn't good for the model, because it increases the dimensionality without a considerable variance. So in this case, we should remove one of them.
+**There are some variables that have considerable impact over 'is_fraud' result values:**
+
+- 'amount'
+- 'step'
+- 'moth_fortnight'
+- 'amount_level'
+- 'flow_dest'
+- 'is_flagged_fraud'
 
 
 # Business Solution Performance
