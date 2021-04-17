@@ -41,7 +41,7 @@ Create a binary classification toll with statics model and machine learning to i
 ## Univariate Analysis
 
 
-### Categorical features distribution analysis
+### Categorical Features Distribution Analysis
 
 ![cat_features_distribution](https://user-images.githubusercontent.com/81817799/115088928-9b980f80-9ee7-11eb-9bf2-4483fd6fc815.png)
 
@@ -56,7 +56,7 @@ Create a binary classification toll with statics model and machine learning to i
 - There is a almost percentage (close to 1%) of transactions which is a fraud, between all transactions executed
 
 
-### Numerical features distribution analysis
+### Numerical Features Distribution Analysis
 
 ![num_features_distribution](https://user-images.githubusercontent.com/81817799/115088964-ace11c00-9ee7-11eb-8d03-d93215fa3ec1.png)
 
@@ -65,27 +65,27 @@ All numerical variables have a large number of outliers yet, except the 'step' f
 
 ## Bivariate Analysis
 
-### HYPOTESE 1: There are more fraudulent transactions in quantity through Cash-Out type
+### Hypotese 1: There are more fraudulent transactions in quantity through Cash-Out type
 
 ![H1_TF](https://user-images.githubusercontent.com/81817799/115089004-c6826380-9ee7-11eb-8053-48e28c3d3d33.png)
 There are just Transfer and Cash-Out type in fraudulent transactions.
 The Transfer type is the most common type between both, surpassing with a slightly difference of 3.
 
 
-### HYPOTESE 2: There are more fraudulent transactions in total values through Transfer type
+### Hypotese 2: There are more fraudulent transactions in total values through Transfer type
 
 ![H2_TF](https://user-images.githubusercontent.com/81817799/115089006-c84c2700-9ee7-11eb-96e7-6d08f0d90b26.png)
 Transfer type also have more fraudulent transactions executed in total values then Cash-Out type.
 
 
-### HYPOTESE 3: All transactions over $ 200,000.00 are fraudulents
+### Hypotese 3: All transactions over $ 200,000.00 are fraudulents
 
 ![H3_TF](https://user-images.githubusercontent.com/81817799/115089010-c97d5400-9ee7-11eb-906c-bf6d9296a0b7.png)
 Not all transactions over \$ 200,000.00 are fraudulent.
 Only a small percentage of the transactions with \$ 200,000.00 amount or higher are fraudulent.
 
 
-### HYPOTESE 4: Transactions with amount values level between $ 50,000.00 and 200,000.00 are more likely to be fraudulent than the others amount levels
+### Hypotese 4: Transactions with amount values level between $ 50,000.00 and 200,000.00 are more likely to be fraudulent than the others amount levels
 
 ![H4_TF](https://user-images.githubusercontent.com/81817799/115089012-ca15ea80-9ee7-11eb-9e46-f9e292b90c64.png)
 Transaction level between $ 50,000.00 and \\$ 200,000.00 have more fraudulent transactions than between \\$ 0.00 and \\$ 50,000.00 level.
@@ -98,19 +98,19 @@ Transaction level with amounts higher than \$ 200,000.00 have more fraudulent tr
 There are only fraudulent transactions between Customer-Customer relation.
 
 
-### HYPOTESE 6: There is more chance of having a fraudulent transaction when the final origin's balance is zero
+### Hypotese 6: There is more chance of having a fraudulent transaction when the final origin's balance is zero
 
 ![H6_TF](https://user-images.githubusercontent.com/81817799/115089017-cda97180-9ee7-11eb-8e17-bc9819964bd8.png)
 Only a few percent of the fraudulent transactions leave the origin account's final balance with values different than zero.
 
 
-### HYPOTESE 7: Fraudulent transactions tends to happen more on the weekends than workweek
+### Hypotese 7: Fraudulent transactions tends to happen more on the weekends than workweek
 
 ![H7_TF](https://user-images.githubusercontent.com/81817799/115089018-cf733500-9ee7-11eb-868a-240f5afccdcd.png)
 Fraudulent transactions are more likely to happen during the workweek than weekends.
 
 
-### HYPOTESE 8: Fraudulent transactions tends to happen more on the First month's Fortnight than the Second month's Fortnight
+### Hypotese 8: Fraudulent transactions tends to happen more on the First month's Fortnight than the Second month's Fortnight
 
 ![H8_TF](https://user-images.githubusercontent.com/81817799/115089020-d00bcb80-9ee7-11eb-8bfa-c91187990635.png)
 Despite the fact that transactions are more likely to happen at the first month's fortnight, the fraudulent transactions are more likely to happen, with a slightly difference, at the second month's fortnight.
@@ -132,34 +132,33 @@ Despite the fact that transactions are more likely to happen at the first month'
 
 To start, the following machine learning models were tested:
 
-![machine_learning_models](https://user-images.githubusercontent.com/81817799/115126568-54bd1f00-9fa6-11eb-9b00-05682f0459fb.png)
+![machine_learning_models](https://user-images.githubusercontent.com/81817799/115127098-2e997e00-9faa-11eb-9adc-637852e09c94.png)
 
-- **On the business side:** We are aiming Precision score. Because each 5% increases on it is a R$ 500 increase in the diagnosis test price
-- **On the patient side:** We are aiming Recall score. Because it reduces the chance of having a False Negative test result. As we know, false negatives results, frequently, comforts people into not retest. And in this case, there will be people with a growing disease that they don't know
+On the business side we are aiming Recall score. Because only False Negative values (fraudulent transactions that our predict model let it pass) that have a negative impact over the BF company revenue.
 
-So, we will choose the Top 4 best F1 Score models above to analyze, which is a metric that takes into account the Precision and the Recall metrics.
+So, we will choose the Top 4 best Recall models above to analyze.
 
 # Machine Learning Model Proposed
 
-![final_machine_learning_model](https://user-images.githubusercontent.com/81817799/115125769-b7abb780-9fa0-11eb-9106-5fb2cea58791.png)
+![final_machine_learning_models](https://user-images.githubusercontent.com/81817799/115127108-4e30a680-9faa-11eb-947e-84df06093136.png)
 
-- All LGBM models have almost the same metrics, in general
-- Taking in account that the LGBM Default model have a lower Recall and lower F1 score than the others, it will be cut out, thinking about the patients interests
-- Taking in account that the LGBM Tuned & Calibrated model have a lower Precision and Recall intervals than the LGBM Tuned model, it will be cut out, thinking about the patients interests
+- All XGB models have almost the same metrics, in general
+- XGB Default have a higher Precision than the others XGB models. Which reduces the BF company revenue, because the company wins 5\% for each transaction falsely accused as fraudulent (False Positive). So it will be cut out.
+- XGB Tuned & Calibrated have a higher Recall interval than the XGB Tuned, which is a major importance metrics for our business proposal
 
-So, **we will choose the LGBM Tuned as the final model to propose.**
+So, even with the slightly higher Precision interval, **we will choose the the XGB Tuned & Calibrated model as the final model to propose,  because of it's significant higher Recall.**
 
 **OBS:** For more about the decisions made and how it was done: [Blocker Fraud notebook](https://github.com/pedrofratucci/Blocker_Fraud_Company/blob/main/notebooks/blocker_fraud_PH.ipynb)
 
 
 # Business Solution Performance
 
-## Business accuracy methods comparison
+## Business Precision and Recall Methods Comparison
 
 In process...
 
 
-## Business revenue methods comparison
+## Business Revenue Methods Comparison
 
 In process...
   
