@@ -128,6 +128,29 @@ Despite the fact that transactions are more likely to happen at the first month'
 - 'flow_dest'
 - 'is_flagged_fraud'
 
+# Machine Learning Models Testing
+
+To start, the following machine learning models were tested:
+
+![machine_learning_models](https://user-images.githubusercontent.com/81817799/115126568-54bd1f00-9fa6-11eb-9b00-05682f0459fb.png)
+
+- **On the business side:** We are aiming Precision score. Because each 5% increases on it is a R$ 500 increase in the diagnosis test price
+- **On the patient side:** We are aiming Recall score. Because it reduces the chance of having a False Negative test result. As we know, false negatives results, frequently, comforts people into not retest. And in this case, there will be people with a growing disease that they don't know
+
+So, we will choose the Top 4 best F1 Score models above to analyze, which is a metric that takes into account the Precision and the Recall metrics.
+
+# Machine Learning Model Proposed
+
+![final_machine_learning_model](https://user-images.githubusercontent.com/81817799/115125769-b7abb780-9fa0-11eb-9106-5fb2cea58791.png)
+
+- All LGBM models have almost the same metrics, in general
+- Taking in account that the LGBM Default model have a lower Recall and lower F1 score than the others, it will be cut out, thinking about the patients interests
+- Taking in account that the LGBM Tuned & Calibrated model have a lower Precision and Recall intervals than the LGBM Tuned model, it will be cut out, thinking about the patients interests
+
+So, **we will choose the LGBM Tuned as the final model to propose.**
+
+**OBS:** For more about the decisions made and how it was done: [Blocker Fraud notebook](https://github.com/pedrofratucci/Blocker_Fraud_Company/blob/main/notebooks/blocker_fraud_PH.ipynb)
+
 
 # Business Solution Performance
 
@@ -141,7 +164,6 @@ In process...
 In process...
   
   
-
 # Further Improvements
 
 - Develop an app that intakes a transaction and flags it's probability of being fraudulent or not
