@@ -31,17 +31,17 @@ Create a binary classification toll ("Blocker Fraud" model) with statics model a
 
 # Dataset Summary
 
-- **step** - [int]: Maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation)
-- **type** - [categorical]: CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER
-- **amount** - [float]: Amount of the transaction in local currency
-- **nameOrig** - [string]: Customer who started the transaction
-- **oldbalanceOrg** - [float]: Initial balance before the transaction
-- **newbalanceOrig** - [float]: New balance after the transaction
-- **nameDest** - [string]: Customer who is the recipient of the transaction
-- **oldbalanceDest** - [float]: Initial balance recipient before the transaction. Note that there is not information for customers that start with M (Merchants)
-- **newbalanceDest** - [float]: New balance recipient after the transaction. Note that there is not information for customers that start with M (Merchants)
-- **isFraud** - [binary]: This is the transactions made by the fraudulent agents inside the simulation. In this specific dataset the fraudulent behavior of the agents aims to profit by taking control or customers accounts and try to empty the funds by transferring to another account and then cashing out of the system
-- **isFlaggedFraud** - [binary]: The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than \$ 200.000 in a single transaction
+- **`step`** - [int]: Maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation)
+- **`type`** - [categorical]: CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER
+- **`amount`** - [float]: Amount of the transaction in local currency
+- **`nameOrig`** - [string]: Customer who started the transaction
+- **`oldbalanceOrg`** - [float]: Initial balance before the transaction
+- **`newbalanceOrig`** - [float]: New balance after the transaction
+- **`nameDest`** - [string]: Customer who is the recipient of the transaction
+- **`oldbalanceDest`** - [float]: Initial balance recipient before the transaction. Note that there is not information for customers that start with M (Merchants)
+- **`newbalanceDest`** - [float]: New balance recipient after the transaction. Note that there is not information for customers that start with M (Merchants)
+- **`isFraud`** - [binary]: This is the transactions made by the fraudulent agents inside the simulation. In this specific dataset the fraudulent behavior of the agents aims to profit by taking control or customers accounts and try to empty the funds by transferring to another account and then cashing out of the system
+- **`isFlaggedFraud`** - [binary]: The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than \$ 200.000 in a single transaction
 
 #  Mind Map Hypoteses
 ![mind_map](https://user-images.githubusercontent.com/81817799/115088913-8d49f380-9ee7-11eb-8ad6-efd978ca3d9a.png)
@@ -71,7 +71,7 @@ Create a binary classification toll ("Blocker Fraud" model) with statics model a
 
 ![num_features_distribution](https://user-images.githubusercontent.com/81817799/115088964-ace11c00-9ee7-11eb-8d03-d93215fa3ec1.png)
 
-All numerical variables have a large number of outliers yet, except the 'step' feature.
+All numerical variables have a large number of outliers yet, except the `**step`** feature.
 
 
 ## Bivariate Analysis
@@ -132,12 +132,12 @@ Despite the fact that transactions are more likely to happen at the first month'
 ![features_relations](https://user-images.githubusercontent.com/81817799/115089471-aa32f680-9ee8-11eb-8c33-8e1723953a1b.png)
 **There are some variables that have considerable impact over 'is_fraud' result values:**
 
-- 'amount'
-- 'step'
-- 'moth_fortnight'
-- 'amount_level'
-- 'flow_dest'
-- 'is_flagged_fraud'
+- **`amount`**
+- **`step`**
+- **`moth_fortnight`**
+- **`amount_level`**
+- **`flow_dest`**
+- **`is_flagged_fraud`**
 
 # Machine Learning Models Testing
 
