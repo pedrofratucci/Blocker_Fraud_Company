@@ -132,7 +132,7 @@ Despite the fact that transactions are more likely to happen at the first month'
 
 To start, the following machine learning models were tested:
 
-![machine_learning_models](https://user-images.githubusercontent.com/81817799/115127098-2e997e00-9faa-11eb-9adc-637852e09c94.png)
+![machine_learning_models](https://user-images.githubusercontent.com/81817799/115146552-5847b900-a02d-11eb-8436-87ec55d53bcb.png)
 
 On the business side we are aiming Recall score. Because only False Negative values (fraudulent transactions that our predict model let it pass) that have a negative impact over the BF company revenue.
 
@@ -140,7 +140,7 @@ So, we will choose the Top 4 best Recall models above to analyze.
 
 # Machine Learning Model Proposed
 
-![final_machine_learning_models](https://user-images.githubusercontent.com/81817799/115127108-4e30a680-9faa-11eb-947e-84df06093136.png)
+![final_machine_learning_models](https://user-images.githubusercontent.com/81817799/115146563-61388a80-a02d-11eb-92fc-0396b4dbd20a.png)
 
 - All XGB models have almost the same metrics, in general
 - XGB Default have a higher Precision than the others XGB models. Which reduces the BF company revenue, because the company wins 5\% for each transaction falsely accused as fraudulent (False Positive). So it will be cut out.
