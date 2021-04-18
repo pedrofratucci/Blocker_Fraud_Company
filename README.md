@@ -4,18 +4,29 @@
 
 # Business Problem
 
-In process...
+The Fraud Blocker Company (FBC) is a company specialized in detecting fraud in financial transactions made through mobile devices. The company has a service called “Blocker Fraud” in which it guarantees the blocking of fraudulent transactions.
 
+The company's business model is of the Service type with the monetization made for the performance of the service provided, that is, the customer pays a fixed fee on the success in detecting fraud in the customer's transactions. In addition, the FBC is expanding and to acquire customers more quickly, it has adopted te following aggressive strategy:
+
+- FBC receives 25% of the transaction amount from a transaction that is truly detected as fraud (True Falses).
+
+- FBC receives 5% of the transaction amount from a transaction detected as fraud, but the transaction is truly legitimate (False Positives).
+
+- FBC refunds the bank 100% of the transaction amount from a transaction detected as legitimate, however the transaction is truly a fraud (False Negatives).
+
+With this aggressive strategy, the company assumes the risks of failing to detect fraud and is remunerated for assertive fraud detection. For the client, it is an excellent business to hire the FBC. Although the fee charged is very high on success, 25%, the company reduces its costs with fraudulent transactions correctly detected and the damage caused by an error in the anti-fraud service will be covered by the FBC itself.
+
+For this project, it will be considerate that a certain bank hired the FBC services ("Fraud Blocker" model) to manage its fraudulent transactions analysis.
 
 # Objective and Solution Proposal
 
 ### Objective
 
-Increase the Blocker Fraud Company (BF) profit. By increase the actual fraud transaction analysis recall, precision and stability.
+Increase the Blocker Fraud Company (BFC) profit. By increase the actual fraud transaction analysis recall, precision and stability.
 
 ### Solution Proposal
 
-Create a binary classification toll with statics model and machine learning to increase the fraud diagnosis recall, precision and accuracy.
+Create a binary classification toll ("Blocker Fraud" model) with statics model and machine learning to increase the fraud diagnosis recall, precision and accuracy.
 
 
 # Dataset Summary
