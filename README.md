@@ -71,7 +71,7 @@ Create a binary classification toll ("Blocker Fraud" model) with statics model a
 
 ![num_features_distribution](https://user-images.githubusercontent.com/81817799/115088964-ace11c00-9ee7-11eb-8d03-d93215fa3ec1.png)
 
-All numerical variables have a large number of outliers yet, except the `**step`** feature.
+All numerical variables have a large number of outliers yet, except the **`step`** feature.
 
 
 ## Bivariate Analysis
