@@ -155,12 +155,12 @@ So, even with the slightly higher Precision interval, **we will choose the the X
 
 ## Bank Business Methods Comparison
 
-In process...
+![bank_business_method](https://user-images.githubusercontent.com/81817799/115153184-13cb1600-a04b-11eb-9323-8ffe22065026.JPG)
 
 
-## Bank Fraud Company Revenue
+## Blocker Fraud Company Revenue
 
-In process...
+![BFC_revenue](https://user-images.githubusercontent.com/81817799/115153199-1a598d80-a04b-11eb-94ab-2e5fcb721e10.JPG)
   
   
 # Further Improvements
