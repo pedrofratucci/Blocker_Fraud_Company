@@ -153,12 +153,12 @@ So, even with the slightly higher Precision interval, **we will choose the the X
 
 # Business Solution Performance
 
-## Business Precision and Recall Methods Comparison
+## Bank Business Methods Comparison
 
 In process...
 
 
-## Business Revenue Methods Comparison
+## Bank Fraud Company Revenue
 
 In process...
   
