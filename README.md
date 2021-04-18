@@ -16,7 +16,7 @@ The company's business model is of the Service type with the monetization made f
 
 With this aggressive strategy, the company assumes the risks of failing to detect fraud and is remunerated for assertive fraud detection. For the client, it is an excellent business to hire the FBC. Although the fee charged is very high on success, 25%, the company reduces its costs with fraudulent transactions correctly detected and the damage caused by an error in the anti-fraud service will be covered by the FBC itself.
 
-For this project, it will be considerate that a certain bank hired the FBC services ("Fraud Blocker" model) to manage its fraudulent transactions analysis.
+For this project, it will be considerate that a certain bank is about to hire the FBC services ("Fraud Blocker" model) and provided a dataset of transactions so we could create a model to manage its fraudulent transactions analysis.
 
 # Objective and Solution Proposal
 
