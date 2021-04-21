@@ -149,7 +149,7 @@ On the business side we are aiming Recall score. Because only False Negative val
 
 So, we will choose the Top 4 best Recall models above to analyze.
 
-# Machine Learning Model Proposed
+# Proposed Machine Learning Model
 
 ![final_machine_learning_models](https://user-images.githubusercontent.com/81817799/115146563-61388a80-a02d-11eb-92fc-0396b4dbd20a.png)
 
