@@ -168,11 +168,11 @@ So, even with the slightly higher Precision interval, **we will choose the the X
 
 ## Bank Business Methods Comparison
 
-<img src= "storytelling/bank_business_method.jpg"> 
+<img src= "storytelling/bank_business_method.JPG"> 
 
 ## Blocker Fraud Company Revenue
 
-<img src= "storytelling/BFC_revenue.jpg"> 
+<img src= "storytelling/BFC_revenue.JPG"> 
   
 # Further Improvements
 
