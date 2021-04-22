@@ -79,52 +79,52 @@ All numerical variables have a large number of outliers yet, except the **`step`
 
 ### Hypothesis 1: There are more fraudulent transactions in quantity through Cash-Out type
 
-<img src= "images/H1.png"> 
+<img src= "storytelling/H1_TF.png"> 
 There are just Transfer and Cash-Out type in fraudulent transactions.
 The Transfer type is the most common type between both, surpassing with a slightly difference of 3.
 
 
 ### Hypothesis 2: There are more fraudulent transactions in total values through Transfer type
 
-<img src= "images/H2.png"> 
+<img src= "storytelling/H2_TF.png"> 
 Transfer type also have more fraudulent transactions executed in total values then Cash-Out type.
 
 
 ### Hypothesis 3: All transactions over $ 200,000.00 are fraudulents
 
-<img src= "images/H3.png"> 
+<img src= "storytelling/H3_TF.png"> 
 Not all transactions over \$ 200,000.00 are fraudulent.
 Only a small percentage of the transactions with \$ 200,000.00 amount or higher are fraudulent.
 
 
 ### Hypothesis 4: Transactions with amount values level between $ 50,000.00 and 200,000.00 are more likely to be fraudulent than the others amount levels
 
-<img src= "images/H4.png"> 
+<img src= "storytelling/H4_TF.png"> 
 Transaction level between $ 50,000.00 and \\$ 200,000.00 have more fraudulent transactions than between \\$ 0.00 and \\$ 50,000.00 level.
 Transaction level with amounts higher than \$ 200,000.00 have more fraudulent transactions of all of them.
 
 
 ### Hypothesis 5: Fraudulent transations happens more to Customer-Customer than Customer-Merchant relation
 
-<img src= "images/H5.png"> 
+<img src= "storytelling/H5_TF.png"> 
 There are only fraudulent transactions between Customer-Customer relation.
 
 
 ### Hypothesis 6: There is more chance of having a fraudulent transaction when the final origin's balance is zero
 
-<img src= "images/H6.png"> 
+<img src= "storytelling/H6_TF.png"> 
 Only a few percent of the fraudulent transactions leave the origin account's final balance with values different than zero.
 
 
 ### Hypothesis 7: Fraudulent transactions tends to happen more on the weekends than workweek
 
-<img src= "images/H7.png"> 
+<img src= "storytelling/H7_TF.png"> 
 Fraudulent transactions are more likely to happen during the workweek than weekends.
 
 
 ### Hypothesis 8: Fraudulent transactions tends to happen more on the First month's Fortnight than the Second month's Fortnight
 
-<img src= "images/H8.png"> 
+<img src= "storytelling/H8_TF.png"> 
 Despite the fact that transactions are more likely to happen at the first month's fortnight, the fraudulent transactions are more likely to happen, with a slightly difference, at the second month's fortnight.
 
 
