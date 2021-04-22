@@ -200,17 +200,6 @@ If the bank that provided the transactions dataset hire the Blocker Fraud Compan
 <br>
 **Best Scenario: R$ 132,667,313.49** 
 
-### Proposed Business Diagnosis Test Profit
-
-Taking in account the small precision deviance and range, compared to the actual business method, it still creates an unpredictable revenue as well, buy only with positive resulting scenarios.
-
-Taking both cases best scenarios in comparison, we have a 400% revenue increase.
-
-**Worst Scenario: R$ 2,000.00**
-<br>
-**Best Scenario:  R$ 2,500.00** 
-
-
 # References
 
 ## Business Problem Source
