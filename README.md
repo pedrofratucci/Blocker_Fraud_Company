@@ -168,17 +168,47 @@ So, even with the slightly higher Precision interval, **we will choose the the X
 
 ## Bank Business Methods Comparison
 
-<img src= "storytelling/bank_business_method.JPG"> 
+### Actual Business Method Metrics
 
-## Blocker Fraud Company Revenue
+There is not an actual method that prevents fraudulent transactions.
 
-<img src= "storytelling/BFC_revenue.JPG"> 
-  
-# Further Improvements
+The only actual attempt to avoid fraudulent transactions, by the bank, is to flag all transactions with an amount superior than $ 200,000.00.
 
-- Develop an app that intakes a transaction and flags it's probability of being fraudulent or not
+**Precision Interval Achieved: No data available**
+<br>
+**Accuracy Interval Achieved: No data available**
 
-- Build a model retraining pipeline as the database of transactions grow
+### Proposed Business Method Metrics
+
+Hire the Blocker Fraud Company's services. Which creates an automatic transactions fraud analysis, based on a large bank transactions dataset.
+
+It takes in consideration many other variables, such as the day, account type and differences between the origin and destination accounts after the transaction.
+
+**Precision Interval Achieved: 95,48% to 98,70%**
+<br>
+**Accuracy Interval Achieved: 99,92% to 99,96%**
+
+## Blocker Fraud Company Business Revenue
+
+If the bank that provided the transactions dataset hire the Blocker Fraud Company services and taking in account that:
+
+- FBC receives 25% of the transaction amount from a transaction that is truly detected as fraud (True Falses)
+- FBC receives 5% of the transaction amount from a transaction detected as fraud, but the transaction is truly legitimate (False Positives)
+- FBC refunds the bank 100% of the transaction amount from a transaction detected as legitimate, however the transaction is truly a fraud (False Negatives)
+
+**Worst Scenario: R$ 105,395,308.18**
+<br>
+**Best Scenario: R$ 132,667,313.49** 
+
+### Proposed Business Diagnosis Test Profit
+
+Taking in account the small precision deviance and range, compared to the actual business method, it still creates an unpredictable revenue as well, buy only with positive resulting scenarios.
+
+Taking both cases best scenarios in comparison, we have a 400% revenue increase.
+
+**Worst Scenario: R$ 2,000.00**
+<br>
+**Best Scenario:  R$ 2,500.00** 
 
 
 # References
