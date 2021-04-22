@@ -200,6 +200,12 @@ If the bank that provided the transactions dataset hire the Blocker Fraud Compan
 <br>
 **Best Scenario: R$ 132,667,313.49** 
 
+# Further Improvements
+
+- Develop an app that intakes a transaction and flags it's probability of being fraudulent or not
+
+- Build a model retraining pipeline as the database of transactions grow
+- 
 # References
 
 ## Business Problem Source
