@@ -45,7 +45,7 @@ Create a binary classification toll ("Blocker Fraud" model) with statics model a
 
 #  Mind Map Hypoteses
 
-<img src= "images/mind_map.png"> 
+<img src= "storytelling/mind_map.png"> 
 
 
 # Exploratory Data Analysis
