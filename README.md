@@ -206,7 +206,7 @@ If the bank that provided the transactions dataset hire the Blocker Fraud Compan
 
 - Build a model retraining pipeline as the database of transactions grow.
 
-# References
+# Referencess
 
 ## Business Problem Source
 - https://sejaumdatascientist.com/crie-uma-solucao-para-fraudes-em-transacoes-financeiras-usando-machine-learning/
