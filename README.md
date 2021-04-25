@@ -2,7 +2,7 @@
 ![Main figure](https://sejaumdatascientist.com/wp-content/uploads/2020/10/corruption.png)
 
 
-# Business Problems
+# Business Problem
 
 The Fraud Blocker Company (FBC) is a company specialized in detecting fraud in financial transactions made through mobile devices. The company has a service called “Blocker Fraud” in which it guarantees the blocking of fraudulent transactions.
 
