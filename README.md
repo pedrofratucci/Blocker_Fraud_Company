@@ -57,15 +57,15 @@ Create a binary classification toll ("Blocker Fraud" model) with statics model a
 
 <img src= "storytelling/cat_features_distribution.png"> 
 
-- There are no transactions executed by Merchants
-- Most of the transactions have account type customer as final destination
-- Payment and Cash-Out as the most common type of transactions
-- Transactions happens more often between day 6 and 17
-- Transactions happens more often in the second month's week
-- Transactions happens more during workweeks than weekends
-- Transactions happens more often during the first month's fortnight
-- There are more transactions with amounts between \$ 0.00 and \\$ 50,000.00 values than other amounts levels
-- There is a almost percentage (close to 1%) of transactions which is a fraud, between all transactions executed
+- There are no transactions executed by Merchants.
+- Most of the transactions have account type customer as final destination.
+- Payment and Cash-Out as the most common type of transactions.
+- Transactions happens more often between day 6 and 17.
+- Transactions happens more often in the second month's week.
+- Transactions happens more during workweeks than weekends.
+- Transactions happens more often during the first month's fortnight.
+- There are more transactions with amounts between \$ 0.00 and \\$ 50,000.00 values than other amounts levels.
+- There is a almost percentage (close to 1%) of transactions which is a fraud, between all transactions executed.
 
 
 ### Numerical Features Distribution Analysis
@@ -171,9 +171,9 @@ So, we will choose the Top 4 best Recall models above to analyze.
 
 <img src= "storytelling/final_machine_learning_models.png"> 
 
-- All XGB models have almost the same metrics, in general
-- XGB Default have a higher Precision than the others XGB models. Which reduces the BF company revenue, because the company wins 5\% for each transaction falsely accused as fraudulent (False Positive). So it will be cut out
-- XGB Tuned & Calibrated have a higher Recall interval than the XGB Tuned, which is a major importance metrics for our business proposal
+- All XGB models have almost the same metrics, in general.
+- XGB Default have a higher Precision than the others XGB models. Which reduces the BF company revenue, because the company wins 5\% for each transaction falsely accused as fraudulent (False Positive). So it will be cut out.
+- XGB Tuned & Calibrated have a higher Recall interval than the XGB Tuned, which is a major importance metrics for our business proposal.
 
 So, even with the slightly higher Precision interval, **we will choose the the XGB Tuned & Calibrated model as the final model to propose,  because of it's significant higher Recall.**
 
@@ -208,9 +208,9 @@ It takes in consideration many other variables, such as the day, account type an
 
 If the bank that provided the transactions dataset hire the Blocker Fraud Company services and taking in account that:
 
-- FBC receives 25% of the transaction amount from a transaction that is truly detected as fraud (True Falses)
-- FBC receives 5% of the transaction amount from a transaction detected as fraud, but the transaction is truly legitimate (False Positives)
-- FBC refunds the bank 100% of the transaction amount from a transaction detected as legitimate, however the transaction is truly a fraud (False Negatives)
+- FBC receives 25% of the transaction amount from a transaction that is truly detected as fraud (True Falses).
+- FBC receives 5% of the transaction amount from a transaction detected as fraud, but the transaction is truly legitimate (False Positives).
+- FBC refunds the bank 100% of the transaction amount from a transaction detected as legitimate, however the transaction is truly a fraud (False Negatives).
 
 **Worst Scenario: R$ 105,395,308.18**
 <br>
@@ -218,9 +218,9 @@ If the bank that provided the transactions dataset hire the Blocker Fraud Compan
 
 # Further Improvements
 
-- Develop an app that intakes a transaction and flags it's probability of being fraudulent or not
+- Develop an app that intakes a transaction and flags it's probability of being fraudulent or not.
 
-- Build a model retraining pipeline as the database of transactions grow
+- Build a model retraining pipeline as the database of transactions grow.
 
 # References
 
