@@ -20,6 +20,7 @@ For this project, it will be considerate that a certain bank is about to hire th
 
 # Objective and Solution Proposal
 
+
 ### Objective
 
 Increase the Blocker Fraud Company (BFC) profit. By increase the actual fraud transaction analysis recall, precision and stability.
